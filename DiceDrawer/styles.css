@@ -3,7 +3,7 @@ body {
 }
 
 .drawer {
-	height: 800px;
+	height: 80vh;
 	width: 80%;
 	margin: auto;
 }
@@ -30,5 +30,10 @@ body {
 	height: 100%;
 	width: 98%;
 	background-image: url("images/lightwood.jpg");
-	margin:auto
+	margin:auto;
+	transition: height 1s;
+	overflow: hidden;
+}
+.drawer .drawerbox.close {
+	height: 0;
 }
