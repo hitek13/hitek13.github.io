@@ -1,0 +1,34 @@
+body {
+	background-color: #333333;
+}
+
+.drawer {
+	height: 800px;
+	width: 80%;
+	margin: auto;
+}
+
+.drawer .knob {
+	height: 90px;
+	width: 100px;
+	background-image: url("images/knob.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
+	margin:auto
+}
+
+.drawer .drawerwall {
+	height: 30px;
+	width: 100%;
+	background-image: url("images/darkwood.jpg");
+	margin:auto;
+	border-radius: 5px;
+}
+
+.drawer .drawerbox {
+	height: 100%;
+	width: 98%;
+	background-image: url("images/lightwood.jpg");
+	margin:auto
+}
