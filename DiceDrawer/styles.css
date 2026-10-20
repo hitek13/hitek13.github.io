@@ -29,7 +29,7 @@ body {
 .drawer .drawerbox {
 	height: 100%;
 	width: 98%;
-	background-image: url("images/lightwood.jpg");
+	background: url("images/lightwood.jpg") bottom center;
 	margin:auto;
 	transition: height 1s;
 	overflow: hidden;
