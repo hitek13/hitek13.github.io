@@ -1,5 +1,6 @@
 body {
 	background-color: #333333;
+	font-family: Arial, sans-serif;
 }
 
 .drawer {
@@ -15,7 +16,8 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	transform: rotate(180deg);
-	margin:auto
+	margin: auto;
+	cursor: pointer;
 }
 
 .drawer .drawerwall {
@@ -23,7 +25,7 @@ body {
 	width: 100%;
 	background-image: url("images/darkwood.jpg");
 	background-size: cover;
-	margin:auto;
+	margin: auto;
 	border-radius: 5px;
 }
 
@@ -32,9 +34,49 @@ body {
 	width: 98%;
 	background: url("images/lightwood.jpg") bottom center;
 	background-size: 100%;
-	margin:auto;
+	margin: auto;
 	transition: height 1s;
 	overflow: hidden;
+	position: relative;
+}
+
+.drawer .drawerbox canvas {
+	display: block;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.dice-selector-ui {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.65);
+	padding: 8px 14px;
+	border-radius: 6px;
+	color: #ffffff;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+.dice-selector-ui select,
+.dice-selector-ui button {
+	padding: 5px 10px;
+	border-radius: 4px;
+	border: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.dice-selector-ui button {
+	background-color: #4CAF50;
+	color: white;
+	font-weight: bold;
+}
+
+.dice-selector-ui button:hover {
+	background-color: #45a049;
 }
 
 .drawer .drawerbox > * {

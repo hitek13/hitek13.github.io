@@ -2,16 +2,33 @@
 	<head>
 		<link rel="stylesheet" href="styles.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<!-- Three.js for 3D Graphics -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+		<!-- Cannon.js for Physics / Bouncing -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
 		<script src="script.js"></script> 
 	</head>
 	<body>
 		<div class="drawer">
-			<div class="drawerbox close">
-				<h1 style="color: white">Here goes the dice</h1>
+			<div class="drawerbox" id="drawerbox">
+<!-- 
+				<div class="dice-selector-ui">
+					<label for="diceTypeSelect">Select Die:</label>
+					<select id="diceTypeSelect">
+						<option value="d4">D4 (Tetrahedron)</option>
+						<option value="d6" selected>D6 (Cube)</option>
+						<option value="d8">D8 (Octahedron)</option>
+						<option value="d10">D10 (Decahedron)</option>
+						<option value="d12">D12 (Dodecahedron)</option>
+						<option value="d20">D20 (Icosahedron)</option>
+					</select>
+					<button id="spawnDiceBtn">Spawn Die</button>
+				</div>
+-->
+				<!-- 3D Canvas will be injected here -->
 			</div>
 			<div class="drawerwall"></div>
 			<div id="knob" class="knob" ></div>
 		</div>
-	
 	</body>
 </html>
