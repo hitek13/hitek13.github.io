@@ -22,6 +22,7 @@ body {
 	height: 30px;
 	width: 100%;
 	background-image: url("images/darkwood.jpg");
+	background-size: cover;
 	margin:auto;
 	border-radius: 5px;
 }
@@ -30,10 +31,22 @@ body {
 	height: 100%;
 	width: 98%;
 	background: url("images/lightwood.jpg") bottom center;
+	background-size: 100%;
 	margin:auto;
 	transition: height 1s;
 	overflow: hidden;
 }
+
+.drawer .drawerbox > * {
+	position: relative;
+	top: 0;
+	transition: top 1s;
+}
+
 .drawer .drawerbox.close {
 	height: 0;
+}
+
+.drawer .drawerbox.close > * {
+	top: -80vh;
 }
